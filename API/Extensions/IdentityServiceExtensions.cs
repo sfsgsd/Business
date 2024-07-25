@@ -7,34 +7,33 @@ using Microsoft.IdentityModel.Tokens;
 using Persistence;
 using System.Text;
 
-namespace API.Extensions
+namespace API.Extensions;
+
+public static class IdentityServiceExtensions
 {
-    public static class IdentityServiceExtensions
-    {
-        public static IServiceCollection AddIdentityServices(this IServiceCollection services, IConfiguration config) {
-            services.AddIdentityCore<AppUser>(opt =>
+    public static IServiceCollection AddIdentityServices(this IServiceCollection services, IConfiguration config) {
+        services.AddIdentityCore<AppUser>(opt =>
+        {
+            opt.Password.RequireNonAlphanumeric = false;
+            opt.User.RequireUniqueEmail = true;
+        }).AddEntityFrameworkStores<BusinessContext>();
+
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["TokenKey"]));
+        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(opt =>
             {
-                opt.Password.RequireNonAlphanumeric = false;
-                opt.User.RequireUniqueEmail = true;
-            }).AddEntityFrameworkStores<BusinessContext>();
-
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["TokenKey"]));
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(opt =>
+                opt.TokenValidationParameters = new TokenValidationParameters
                 {
-                    opt.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuerSigningKey = true,
-                        IssuerSigningKey = key,
-                        ValidateIssuer = false,
-                        ValidateAudience = false
-                    };
-                });
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = key,
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
 
-            services.AddScoped<TokenService>();
+        services.AddScoped<TokenService>();
 
-            return services;
-        }
-        
+        return services;
     }
+    
 }
