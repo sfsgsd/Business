@@ -1,4 +1,4 @@
-﻿namespace Application.Core;
+﻿namespace Business.Application.Core;
 
 public class AppException
 {

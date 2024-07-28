@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Persistence;
+using Business.Infrastructure;
 
-namespace API.Extensions;
+namespace Business.API.Extensions;
 
 public static class ApplicationServiceExtensions
 {

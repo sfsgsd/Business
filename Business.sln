@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.Application", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.Domain", "src\Business.Domain\Business.Domain.csproj", "{ACFB3B7B-62E4-466A-B20A-EFD50E15F888}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.Persistence", "src\Business.Persistence\Business.Persistence.csproj", "{019781E8-5D48-4FFF-B375-8FC5FE27A7AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.Infrastructure", "src\Business.Infrastructure\Business.Infrastructure.csproj", "{019781E8-5D48-4FFF-B375-8FC5FE27A7AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

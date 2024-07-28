@@ -1,9 +1,9 @@
-﻿using Domain.Entities;
+﻿using Business.Domain.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
-namespace Persistence;
+namespace Business.Infrastructure;
 
 public class BusinessContext : IdentityDbContext<AppUser>
 {

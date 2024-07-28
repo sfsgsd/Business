@@ -1,6 +1,6 @@
-﻿using API.DTOs;
-using API.Services;
-using Domain.Entities;
+﻿using Business.API.DTOs;
+using Business.API.Services;
+using Business.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace API.Controllers;
+namespace Business.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

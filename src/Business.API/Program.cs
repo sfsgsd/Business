@@ -1,6 +1,7 @@
-using API.Extensions;
-using API.Middleware;
-using Domain.Entities;
+using Business.API.Extensions;
+using Business.API.Middleware;
+using Business.Domain.Entities;
+using Business.Infrastructure;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
@@ -9,7 +10,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Persistence;
 using System;
 
 var builder = WebApplication.CreateBuilder(args);

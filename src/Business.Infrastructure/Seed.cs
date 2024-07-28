@@ -1,7 +1,7 @@
-﻿using Domain.Entities;
+﻿using Business.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 
-namespace Persistence;
+namespace Business.Infrastructure;
 
 public class Seed
 {

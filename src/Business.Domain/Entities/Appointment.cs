@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities;
+﻿namespace Business.Domain.Entities;
 
 public class Appointment
 {

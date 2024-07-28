@@ -1,7 +1,7 @@
-﻿using Application.Core;
+﻿using Business.Application.Core;
 using Microsoft.AspNetCore.Mvc;
 
-namespace API.Controllers;
+namespace Business.API.Controllers;
 
 [ApiController]
 [Route("[controller]")]
