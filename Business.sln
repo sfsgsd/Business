@@ -1,17 +1,16 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{64F555DA-DFD2-4208-A434-53653C8E129A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.API", "src\Business.API\Business.API.csproj", "{4B49D0D8-351C-488C-ABD9-E282E43280F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "src\API\API.csproj", "{4B49D0D8-351C-488C-ABD9-E282E43280F1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.Application", "src\Business.Application\Business.Application.csproj", "{5B05D2A8-C56D-4F6E-83F3-17E1C0B1E9D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\Application\Application.csproj", "{5B05D2A8-C56D-4F6E-83F3-17E1C0B1E9D7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.Domain", "src\Business.Domain\Business.Domain.csproj", "{ACFB3B7B-62E4-466A-B20A-EFD50E15F888}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\Domain\Domain.csproj", "{ACFB3B7B-62E4-466A-B20A-EFD50E15F888}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.Infrastructure", "src\Business.Infrastructure\Business.Infrastructure.csproj", "{019781E8-5D48-4FFF-B375-8FC5FE27A7AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{019781E8-5D48-4FFF-B375-8FC5FE27A7AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
